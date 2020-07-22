@@ -3,27 +3,45 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4C044A1E0908BD01DB225AA5 /* Pods_SmoothCommerce_Challenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77B616453802EB416B67C864 /* Pods_SmoothCommerce_Challenge.framework */; };
 		E12B9A1324C895D800E53F66 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E12B9A1224C895D800E53F66 /* AppDelegate.swift */; };
 		E12B9A1524C895D800E53F66 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E12B9A1424C895D800E53F66 /* SceneDelegate.swift */; };
-		E12B9A1724C895D800E53F66 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E12B9A1624C895D800E53F66 /* ViewController.swift */; };
+		E12B9A1724C895D800E53F66 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E12B9A1624C895D800E53F66 /* FeedViewController.swift */; };
 		E12B9A1A24C895D800E53F66 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E12B9A1824C895D800E53F66 /* Main.storyboard */; };
 		E12B9A1C24C895D900E53F66 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E12B9A1B24C895D900E53F66 /* Assets.xcassets */; };
 		E12B9A1F24C895D900E53F66 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E12B9A1D24C895D900E53F66 /* LaunchScreen.storyboard */; };
+		E12B9A2724C8967700E53F66 /* TextTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E12B9A2624C8967700E53F66 /* TextTableViewCell.swift */; };
+		E12B9A2924C8968400E53F66 /* LinkTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E12B9A2824C8968400E53F66 /* LinkTableViewCell.swift */; };
+		E12B9A2B24C8968D00E53F66 /* ImageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E12B9A2A24C8968D00E53F66 /* ImageTableViewCell.swift */; };
+		E1B5FFEC24C8B0760064D3B0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E1B5FFEB24C8B0760064D3B0 /* GoogleService-Info.plist */; };
+		E1B5FFEE24C8BAEC0064D3B0 /* videoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1B5FFED24C8BAEC0064D3B0 /* videoTableViewCell.swift */; };
+		E1C7747B24C89B3200A02E9C /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C7747A24C89B3200A02E9C /* Model.swift */; };
+		E1C7747F24C8A7ED00A02E9C /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C7747E24C8A7ED00A02E9C /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4622C89DE8CE123D616C14DF /* Pods-SmoothCommerce Challenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmoothCommerce Challenge.debug.xcconfig"; path = "Target Support Files/Pods-SmoothCommerce Challenge/Pods-SmoothCommerce Challenge.debug.xcconfig"; sourceTree = "<group>"; };
+		65E0252A7E8F369DED0C0114 /* Pods-SmoothCommerce Challenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmoothCommerce Challenge.release.xcconfig"; path = "Target Support Files/Pods-SmoothCommerce Challenge/Pods-SmoothCommerce Challenge.release.xcconfig"; sourceTree = "<group>"; };
+		77B616453802EB416B67C864 /* Pods_SmoothCommerce_Challenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SmoothCommerce_Challenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E12B9A0F24C895D800E53F66 /* SmoothCommerce Challenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SmoothCommerce Challenge.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E12B9A1224C895D800E53F66 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E12B9A1424C895D800E53F66 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		E12B9A1624C895D800E53F66 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E12B9A1624C895D800E53F66 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		E12B9A1924C895D800E53F66 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E12B9A1B24C895D900E53F66 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E12B9A1E24C895D900E53F66 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E12B9A2024C895D900E53F66 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E12B9A2624C8967700E53F66 /* TextTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextTableViewCell.swift; sourceTree = "<group>"; };
+		E12B9A2824C8968400E53F66 /* LinkTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkTableViewCell.swift; sourceTree = "<group>"; };
+		E12B9A2A24C8968D00E53F66 /* ImageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageTableViewCell.swift; sourceTree = "<group>"; };
+		E1B5FFEB24C8B0760064D3B0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		E1B5FFED24C8BAEC0064D3B0 /* videoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = videoTableViewCell.swift; sourceTree = "<group>"; };
+		E1C7747A24C89B3200A02E9C /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		E1C7747E24C8A7ED00A02E9C /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +49,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C044A1E0908BD01DB225AA5 /* Pods_SmoothCommerce_Challenge.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1744D520387017BACF9EEA68 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				77B616453802EB416B67C864 /* Pods_SmoothCommerce_Challenge.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A29E5BC94663DF4F85C9AEFD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4622C89DE8CE123D616C14DF /* Pods-SmoothCommerce Challenge.debug.xcconfig */,
+				65E0252A7E8F369DED0C0114 /* Pods-SmoothCommerce Challenge.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		E12B9A0624C895D800E53F66 = {
 			isa = PBXGroup;
 			children = (
 				E12B9A1124C895D800E53F66 /* SmoothCommerce Challenge */,
 				E12B9A1024C895D800E53F66 /* Products */,
+				A29E5BC94663DF4F85C9AEFD /* Pods */,
+				1744D520387017BACF9EEA68 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +94,54 @@
 		E12B9A1124C895D800E53F66 /* SmoothCommerce Challenge */ = {
 			isa = PBXGroup;
 			children = (
+				E1B5FFF324C8BD970064D3B0 /* Resources */,
+				E1B5FFF124C8BD610064D3B0 /* Models */,
+				E1B5FFF024C8BD560064D3B0 /* Views */,
+				E1B5FFEF24C8BD4E0064D3B0 /* Controllers */,
 				E12B9A1224C895D800E53F66 /* AppDelegate.swift */,
 				E12B9A1424C895D800E53F66 /* SceneDelegate.swift */,
-				E12B9A1624C895D800E53F66 /* ViewController.swift */,
-				E12B9A1824C895D800E53F66 /* Main.storyboard */,
-				E12B9A1B24C895D900E53F66 /* Assets.xcassets */,
-				E12B9A1D24C895D900E53F66 /* LaunchScreen.storyboard */,
 				E12B9A2024C895D900E53F66 /* Info.plist */,
+				E1B5FFEB24C8B0760064D3B0 /* GoogleService-Info.plist */,
 			);
 			path = "SmoothCommerce Challenge";
+			sourceTree = "<group>";
+		};
+		E1B5FFEF24C8BD4E0064D3B0 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				E12B9A1624C895D800E53F66 /* FeedViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		E1B5FFF024C8BD560064D3B0 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E12B9A1824C895D800E53F66 /* Main.storyboard */,
+				E12B9A1D24C895D900E53F66 /* LaunchScreen.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E1B5FFF124C8BD610064D3B0 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E12B9A2624C8967700E53F66 /* TextTableViewCell.swift */,
+				E12B9A2824C8968400E53F66 /* LinkTableViewCell.swift */,
+				E12B9A2A24C8968D00E53F66 /* ImageTableViewCell.swift */,
+				E1B5FFED24C8BAEC0064D3B0 /* videoTableViewCell.swift */,
+				E1C7747E24C8A7ED00A02E9C /* Extensions.swift */,
+				E1C7747A24C89B3200A02E9C /* Model.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		E1B5FFF324C8BD970064D3B0 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E12B9A1B24C895D900E53F66 /* Assets.xcassets */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +151,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E12B9A2324C895D900E53F66 /* Build configuration list for PBXNativeTarget "SmoothCommerce Challenge" */;
 			buildPhases = (
+				62F57B74C592E5A7F8804198 /* [CP] Check Pods Manifest.lock */,
 				E12B9A0B24C895D800E53F66 /* Sources */,
 				E12B9A0C24C895D800E53F66 /* Frameworks */,
 				E12B9A0D24C895D800E53F66 /* Resources */,
+				C9878EC5E77B1F6227222400 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -125,6 +204,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E1B5FFEC24C8B0760064D3B0 /* GoogleService-Info.plist in Resources */,
 				E12B9A1F24C895D900E53F66 /* LaunchScreen.storyboard in Resources */,
 				E12B9A1C24C895D900E53F66 /* Assets.xcassets in Resources */,
 				E12B9A1A24C895D800E53F66 /* Main.storyboard in Resources */,
@@ -133,14 +213,62 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		62F57B74C592E5A7F8804198 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SmoothCommerce Challenge-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C9878EC5E77B1F6227222400 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SmoothCommerce Challenge/Pods-SmoothCommerce Challenge-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SmoothCommerce Challenge/Pods-SmoothCommerce Challenge-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SmoothCommerce Challenge/Pods-SmoothCommerce Challenge-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		E12B9A0B24C895D800E53F66 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E12B9A1724C895D800E53F66 /* ViewController.swift in Sources */,
+				E12B9A2924C8968400E53F66 /* LinkTableViewCell.swift in Sources */,
+				E12B9A1724C895D800E53F66 /* FeedViewController.swift in Sources */,
 				E12B9A1324C895D800E53F66 /* AppDelegate.swift in Sources */,
+				E1C7747F24C8A7ED00A02E9C /* Extensions.swift in Sources */,
+				E1B5FFEE24C8BAEC0064D3B0 /* videoTableViewCell.swift in Sources */,
+				E12B9A2B24C8968D00E53F66 /* ImageTableViewCell.swift in Sources */,
+				E12B9A2724C8967700E53F66 /* TextTableViewCell.swift in Sources */,
 				E12B9A1524C895D800E53F66 /* SceneDelegate.swift in Sources */,
+				E1C7747B24C89B3200A02E9C /* Model.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,6 +410,7 @@
 		};
 		E12B9A2424C895D900E53F66 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4622C89DE8CE123D616C14DF /* Pods-SmoothCommerce Challenge.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -299,6 +428,7 @@
 		};
 		E12B9A2524C895D900E53F66 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 65E0252A7E8F369DED0C0114 /* Pods-SmoothCommerce Challenge.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

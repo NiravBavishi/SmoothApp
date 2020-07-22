@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="vEy-GU-7Su">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Feed-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="FeedViewController" customModule="SmoothCommerce_Challenge" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="r3B-v7-IV1">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="textCell" id="s0p-Hg-qqV" customClass="TextTableViewCell" customModule="SmoothCommerce_Challenge" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="47.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="s0p-Hg-qqV" id="Lq2-9A-apD">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="47.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nothing" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VKk-ar-fta">
+                                                    <rect key="frame" x="28" y="13" width="358" height="21.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="VKk-ar-fta" firstAttribute="leading" secondItem="Lq2-9A-apD" secondAttribute="leadingMargin" constant="8" id="Ofr-py-Q2g"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="VKk-ar-fta" secondAttribute="trailing" constant="8" id="XLB-Oz-tjt"/>
+                                                <constraint firstItem="VKk-ar-fta" firstAttribute="top" secondItem="Lq2-9A-apD" secondAttribute="topMargin" constant="2" id="Z8b-4t-hti"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="VKk-ar-fta" secondAttribute="bottom" constant="2" id="vXp-eq-00e"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="dataTextLabel" destination="VKk-ar-fta" id="flB-JD-80k"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="imageCell" rowHeight="200" id="1Jx-kd-9DG" customClass="ImageTableViewCell" customModule="SmoothCommerce_Challenge" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="75.5" width="414" height="200"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="1Jx-kd-9DG" id="DcT-M9-VIw">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="200"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="QGW-RR-SHh">
+                                                    <rect key="frame" x="20" y="11" width="374" height="178"/>
+                                                </imageView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottomMargin" secondItem="QGW-RR-SHh" secondAttribute="bottom" id="7Nt-h2-aeU"/>
+                                                <constraint firstItem="QGW-RR-SHh" firstAttribute="top" secondItem="DcT-M9-VIw" secondAttribute="topMargin" id="T0K-R8-o1y"/>
+                                                <constraint firstItem="QGW-RR-SHh" firstAttribute="leading" secondItem="DcT-M9-VIw" secondAttribute="leadingMargin" id="ij5-Ph-dpi"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="QGW-RR-SHh" secondAttribute="trailing" id="jtv-jY-0ZR"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="feedImageView" destination="QGW-RR-SHh" id="44g-X3-daj"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="linkCell" rowHeight="193" id="0P9-Sl-cjf" customClass="LinkTableViewCell" customModule="SmoothCommerce_Challenge" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="275.5" width="414" height="193"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="0P9-Sl-cjf" id="ewT-8y-m4P">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="193"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PTf-LQ-lEF">
+                                                    <rect key="frame" x="20" y="11" width="374" height="171"/>
+                                                    <state key="normal" title="Button"/>
+                                                    <connections>
+                                                        <action selector="linkButtonTapped:" destination="0P9-Sl-cjf" eventType="touchUpInside" id="h5K-3b-zKQ"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailingMargin" secondItem="PTf-LQ-lEF" secondAttribute="trailing" id="T7N-rz-K1k"/>
+                                                <constraint firstItem="PTf-LQ-lEF" firstAttribute="leading" secondItem="ewT-8y-m4P" secondAttribute="leadingMargin" id="VM7-Us-b2b"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="PTf-LQ-lEF" secondAttribute="bottom" id="a4H-Rg-Vyf"/>
+                                                <constraint firstItem="PTf-LQ-lEF" firstAttribute="top" secondItem="ewT-8y-m4P" secondAttribute="topMargin" id="wVa-Aa-DdU"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="linkButton" destination="PTf-LQ-lEF" id="TIq-re-j2e"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="videoCell" rowHeight="193" id="WgG-fR-RyK" customClass="videoTableViewCell" customModule="SmoothCommerce_Challenge" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="468.5" width="414" height="193"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="WgG-fR-RyK" id="nZ2-c6-dHY">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="193"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="YOF-bv-QU4"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="wh8-R6-Dyf"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="r3B-v7-IV1" secondAttribute="trailing" id="6b7-hT-sL6"/>
+                            <constraint firstItem="r3B-v7-IV1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="DD2-J0-c2n"/>
+                            <constraint firstItem="r3B-v7-IV1" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="MZg-qD-uxW"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="r3B-v7-IV1" secondAttribute="bottom" id="dZv-qx-2Il"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Feed" id="WvW-28-r77"/>
+                    <connections>
+                        <outlet property="feedTableView" destination="r3B-v7-IV1" id="Qkh-h1-p9e"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1047.8260869565217" y="133.92857142857142"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="B9p-Ps-oeB">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="vEy-GU-7Su" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="2V6-8k-6fU">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Zqt-zr-67g"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BVG-Yb-K4M" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="133.92857142857142"/>
+        </scene>
+    </scenes>
+</document>

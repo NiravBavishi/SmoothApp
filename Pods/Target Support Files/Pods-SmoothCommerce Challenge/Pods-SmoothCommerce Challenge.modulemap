@@ -1,0 +1,6 @@
+framework module Pods_SmoothCommerce_Challenge {
+  umbrella header "Pods-SmoothCommerce Challenge-umbrella.h"
+
+  export *
+  module * { export * }
+}
