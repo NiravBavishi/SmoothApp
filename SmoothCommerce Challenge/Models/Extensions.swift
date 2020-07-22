@@ -11,7 +11,7 @@ import UIKit
 
 extension UIImageView {
     func load(url: String) {
-        
+        print("-------------- Load")
         let actualURL = URL(string: url)
         DispatchQueue.global().async { [weak self] in
             if let data = try? Data(contentsOf: actualURL!) {

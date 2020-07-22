@@ -10,4 +10,5 @@ target 'SmoothCommerce Challenge' do
 	pod 'Firebase/Database'
 pod 'Firebase/Core'
 
+
 end
