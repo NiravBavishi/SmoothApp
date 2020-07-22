@@ -8,6 +8,7 @@
 
 import UIKit
 import FirebaseDatabase
+import SafariServices
 
 class FeedViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
    
@@ -57,6 +58,17 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 100
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        print("--------Tapped")
+        print(results[indexPath.row].itemType)
+        if results[indexPath.row].itemType == "url"{
+            
+            let svc = SFSafariViewController(url: URL(string:"http://stackoverflow.com")!)
+            self.present(svc, animated: true, completion: nil)
+            
+        }
     }
     
     

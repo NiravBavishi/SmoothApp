@@ -1,0 +1,20 @@
+{
+    "data": [
+{
+            "item_type": "text",
+            "data": "Lorem ipsum"
+        },
+        {
+            "item_type": "url",
+            "data": "https://material.io/components/"
+        },
+        {
+            "item_type": "image",
+            "data": "http://placekitten.com/200/300"
+        },
+        {
+            "item_type": "video",
+            "Data": "https://devstreaming-cdn.apple.com/videos/wwdc/2017/230lc4n1loob9/230/hls_vod_mvp.m3u8"
+        }
+    ]
+}

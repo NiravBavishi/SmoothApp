@@ -20,14 +20,14 @@
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="textCell" id="s0p-Hg-qqV" customClass="TextTableViewCell" customModule="SmoothCommerce_Challenge" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="414" height="47.5"/>
+                                        <rect key="frame" x="0.0" y="28" width="414" height="47"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="s0p-Hg-qqV" id="Lq2-9A-apD">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="47.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="47"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nothing" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VKk-ar-fta">
-                                                    <rect key="frame" x="28" y="13" width="358" height="21.5"/>
+                                                    <rect key="frame" x="28" y="13" width="358" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -45,7 +45,7 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="imageCell" rowHeight="200" id="1Jx-kd-9DG" customClass="ImageTableViewCell" customModule="SmoothCommerce_Challenge" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="75.5" width="414" height="200"/>
+                                        <rect key="frame" x="0.0" y="75" width="414" height="200"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="1Jx-kd-9DG" id="DcT-M9-VIw">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="200"/>
@@ -67,38 +67,29 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="linkCell" rowHeight="193" id="0P9-Sl-cjf" customClass="LinkTableViewCell" customModule="SmoothCommerce_Challenge" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="275.5" width="414" height="193"/>
+                                        <rect key="frame" x="0.0" y="275" width="414" height="193"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="0P9-Sl-cjf" id="ewT-8y-m4P">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="193"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PTf-LQ-lEF">
-                                                    <rect key="frame" x="20" y="11" width="374" height="171"/>
-                                                    <state key="normal" title="Button"/>
-                                                    <connections>
-                                                        <action selector="linkButtonTapped:" destination="0P9-Sl-cjf" eventType="touchUpInside" id="h5K-3b-zKQ"/>
-                                                    </connections>
-                                                </button>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ofU-fa-7iP">
+                                                    <rect key="frame" x="28" y="31" width="358" height="131"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstAttribute="trailingMargin" secondItem="PTf-LQ-lEF" secondAttribute="trailing" id="T7N-rz-K1k"/>
-                                                <constraint firstItem="PTf-LQ-lEF" firstAttribute="leading" secondItem="ewT-8y-m4P" secondAttribute="leadingMargin" id="VM7-Us-b2b"/>
-                                                <constraint firstAttribute="bottomMargin" secondItem="PTf-LQ-lEF" secondAttribute="bottom" id="a4H-Rg-Vyf"/>
-                                                <constraint firstItem="PTf-LQ-lEF" firstAttribute="top" secondItem="ewT-8y-m4P" secondAttribute="topMargin" id="wVa-Aa-DdU"/>
+                                                <constraint firstItem="ofU-fa-7iP" firstAttribute="leading" secondItem="ewT-8y-m4P" secondAttribute="leadingMargin" constant="8" id="BWt-Hq-Eh5"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="ofU-fa-7iP" secondAttribute="bottom" constant="20" id="HVd-Ha-ppx"/>
+                                                <constraint firstItem="ofU-fa-7iP" firstAttribute="top" secondItem="ewT-8y-m4P" secondAttribute="topMargin" constant="20" id="VbN-bK-xu6"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="ofU-fa-7iP" secondAttribute="trailing" constant="8" id="gF5-6v-atj"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="linkButton" destination="PTf-LQ-lEF" id="TIq-re-j2e"/>
+                                            <outlet property="urlLabel" destination="ofU-fa-7iP" id="86c-dD-RSO"/>
                                         </connections>
-                                    </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="videoCell" rowHeight="193" id="WgG-fR-RyK" customClass="videoTableViewCell" customModule="SmoothCommerce_Challenge" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="468.5" width="414" height="193"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="WgG-fR-RyK" id="nZ2-c6-dHY">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="193"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </tableViewCellContentView>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>

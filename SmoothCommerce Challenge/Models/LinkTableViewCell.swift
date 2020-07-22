@@ -13,7 +13,8 @@ class LinkTableViewCell: UITableViewCell {
 
     
     
-    @IBOutlet weak var linkButton: UIButton!
+    
+    @IBOutlet weak var urlLabel: UILabel!
     
     var url: String = ""
     
@@ -30,16 +31,9 @@ class LinkTableViewCell: UITableViewCell {
 
     func setURL(url: String){
         
-        self.url = url
-        linkButton.setTitle(url, for: .normal)
+        
+        urlLabel.text = url
         
     }
     
-    @IBAction func linkButtonTapped(_ sender: Any) {
-        
-       
-        guard let url = URL(string: self.url) else { return }
-        UIApplication.shared.open(url)
-        
-    }
 }
