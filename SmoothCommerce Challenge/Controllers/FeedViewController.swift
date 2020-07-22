@@ -9,6 +9,8 @@
 import UIKit
 import FirebaseDatabase
 import SafariServices
+import AVFoundation
+import AVKit
 
 class FeedViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
    
@@ -61,17 +63,31 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print("--------Tapped")
-        print(results[indexPath.row].itemType)
-        if results[indexPath.row].itemType == "url"{
+        
+        let itemType = results[indexPath.row].itemType
+        let data = results[indexPath.row].data
+        
+        if itemType == "url"{
             
             let svc = SFSafariViewController(url: URL(string:"http://stackoverflow.com")!)
             self.present(svc, animated: true, completion: nil)
             
+        }else if itemType == "video"{
+            playVideo(url: data)
         }
     }
     
-    
+    private func playVideo(url:String){
+        
+        guard let url = URL(string: url)else {return}
+              let player = AVPlayer(url: url)
+              var playerController = AVPlayerViewController()
+              playerController.player = player
+              playerController.allowsPictureInPicturePlayback = true
+              playerController.player?.play()
+              self.present(playerController, animated: true, completion: nil)
+ 
+    }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return results.count
@@ -84,22 +100,27 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
         
         if itemType == "text"{
             
-            let cell = (tableView.dequeueReusableCell(withIdentifier: "textCell", for: indexPath) as? TextTableViewCell)!
+            let cell = (tableView.dequeueReusableCell(withIdentifier: "textCell", for: indexPath) as! TextTableViewCell)
                         cell.setData(textData: data)
                    return cell
             
         }
         else if itemType == "image"{
             
-            let cell = (tableView.dequeueReusableCell(withIdentifier: "imageCell", for: indexPath) as? ImageTableViewCell)!
+            let cell = (tableView.dequeueReusableCell(withIdentifier: "imageCell", for: indexPath) as! ImageTableViewCell)
             cell.setImage(url: data)
             return cell
             
         }
         else if itemType == "url"{
             
-            let cell = (tableView.dequeueReusableCell(withIdentifier: "linkCell", for: indexPath) as? LinkTableViewCell)!
+            let cell = (tableView.dequeueReusableCell(withIdentifier: "linkCell", for: indexPath) as! LinkTableViewCell)
             cell.setURL(url: data)
+            return cell
+            
+        }else if itemType == "video"{
+            
+            let cell = tableView.dequeueReusableCell(withIdentifier: "videoCell", for: indexPath) as! videoTableViewCell
             return cell
             
         }

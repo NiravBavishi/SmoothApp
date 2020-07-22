@@ -91,6 +91,28 @@
                                             <outlet property="urlLabel" destination="ofU-fa-7iP" id="86c-dD-RSO"/>
                                         </connections>
                                     </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="videoCell" rowHeight="193" id="6ff-KN-VDz" customClass="videoTableViewCell" customModule="SmoothCommerce_Challenge" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="468" width="414" height="193"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="6ff-KN-VDz" id="gxo-2D-tB8">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="193"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Start Video" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wwK-Io-LPg">
+                                                    <rect key="frame" x="20" y="11" width="374" height="171"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="wwK-Io-LPg" firstAttribute="top" secondItem="gxo-2D-tB8" secondAttribute="topMargin" id="4Hp-x5-Sv1"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="wwK-Io-LPg" secondAttribute="bottom" id="OKS-7a-xwb"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="wwK-Io-LPg" secondAttribute="trailing" id="QPv-av-7DV"/>
+                                                <constraint firstItem="wwK-Io-LPg" firstAttribute="leading" secondItem="gxo-2D-tB8" secondAttribute="leadingMargin" id="hJ3-l3-qmH"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
                                 </prototypes>
                                 <connections>
                                     <outlet property="dataSource" destination="BYZ-38-t0r" id="YOF-bv-QU4"/>
