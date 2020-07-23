@@ -8,15 +8,14 @@
 
 import Foundation
 
-class ResponseData{
+struct responseData{
     
     var itemType: String
     var data : String
     
-    init(itemType: String, data:String) {
-        self.itemType = itemType
-        self.data = data
-    }
     
-    
+}
+
+enum databaseError:Error{
+    case failedToFetch
 }

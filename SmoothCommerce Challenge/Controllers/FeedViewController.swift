@@ -19,7 +19,26 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
     var ref : DatabaseReference?
     var databaseHandle: DatabaseHandle?
     
-    var results : [ResponseData] = []
+    var results : [responseData] = []
+    
+      let resultDataa = [
+        [
+                    "item_type": "text",
+                    "data": "Lorem ipsum"
+                ],
+                [
+                    "item_type": "url",
+                    "data": "https://material.io/components/"
+                ],
+                [
+                    "item_type": "image",
+                    "data": "http://placekitten.com/200/300"
+                ],
+                [
+                    "item_type": "video",
+                    "data": "https://devstreaming-cdn.apple.com/videos/wwdc/2017/230lc4n1loob9/230/hls_vod_mvp.m3u8"
+                ]
+            ]
         
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,6 +51,13 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
         
         
         getDataFromFirebase()
+        
+        
+        for data in resultDataa{
+            
+            results.append(responseData(itemType: data["item_type"]!, data: data["data"]!))
+            
+        }
         
    
     }
@@ -53,7 +79,7 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
                 let itemType = tempData["item_type"] as! String
                 let data = tempData["data"] as! String
                 
-                self.results.append(ResponseData.init(itemType: itemType, data: data))
+                self.results.append(responseData.init(itemType: itemType, data: data))
                    }
         })
     
