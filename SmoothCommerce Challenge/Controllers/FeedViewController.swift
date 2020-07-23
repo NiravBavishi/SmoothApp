@@ -19,42 +19,48 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
     var ref : DatabaseReference?
     var databaseHandle: DatabaseHandle?
     
-    var results :[responseData] = []
-    
-    let resultData = [
-    [
-                "item_type": "text",
-                "data": "Lorem ipsum"
-            ],
-            [
-                "item_type": "url",
-                "data": "https://material.io/components/"
-            ],
-            [
-                "item_type": "image",
-                "data": "http://placekitten.com/200/300"
-            ],
-            [
-                "item_type": "video",
-                "data": "https://devstreaming-cdn.apple.com/videos/wwdc/2017/230lc4n1loob9/230/hls_vod_mvp.m3u8"
-            ]
-        ]
-    
-    
+    var results : [ResponseData] = []
+        
     override func viewDidLoad() {
         super.viewDidLoad()
         feedTableView.delegate = self
         feedTableView.dataSource = self
         // Do any additional setup after loading the view.
         
-        for tempData in resultData{
+        ref = Database.database().reference()
         
-            results.append(responseData.init(itemType: (tempData["item_type"])!, data: (tempData["data"])!))
         
-        }
+        
+        getDataFromFirebase()
+        
+   
     }
     
+    private func getDataFromFirebase() {
+       
+        
+        var tempbuff:[[String:String]] = []
+        
+        ref?.child("data").observe(.value, with: { (snapshot) in
+            guard let value = snapshot.value as? [[String:Any]] else {print("Error")
+                return
+            }
+            
+            
+            var buff = [[String:String]]()
+            for tempData in value{
+                
+                let itemType = tempData["item_type"] as! String
+                let data = tempData["data"] as! String
+                
+                self.results.append(ResponseData.init(itemType: itemType, data: data))
+                   }
+        })
     
+        print("-----------Data")
+        print(results)
+        
+    }
   
     
     
@@ -101,7 +107,7 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
         if itemType == "text"{
             
             let cell = (tableView.dequeueReusableCell(withIdentifier: "textCell", for: indexPath) as! TextTableViewCell)
-                        cell.setData(textData: data)
+            cell.setData(textData: data)
                    return cell
             
         }

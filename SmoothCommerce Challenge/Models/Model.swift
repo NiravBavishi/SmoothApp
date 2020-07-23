@@ -8,7 +8,15 @@
 
 import Foundation
 
-struct responseData {
+class ResponseData{
+    
     var itemType: String
-    var data: String
+    var data : String
+    
+    init(itemType: String, data:String) {
+        self.itemType = itemType
+        self.data = data
+    }
+    
+    
 }
