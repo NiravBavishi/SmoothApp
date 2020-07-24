@@ -21,24 +21,24 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     var results : [responseData] = []
     
-      let resultDataa = [
-        [
-                    "item_type": "text",
-                    "data": "Lorem ipsum"
-                ],
-                [
-                    "item_type": "url",
-                    "data": "https://material.io/components/"
-                ],
-                [
-                    "item_type": "image",
-                    "data": "http://placekitten.com/200/300"
-                ],
-                [
-                    "item_type": "video",
-                    "data": "https://devstreaming-cdn.apple.com/videos/wwdc/2017/230lc4n1loob9/230/hls_vod_mvp.m3u8"
-                ]
-            ]
+//      let resultDataa = [
+//        [
+//                    "item_type": "text",
+//                    "data": "Lorem ipsum"
+//                ],
+//                [
+//                    "item_type": "url",
+//                    "data": "https://material.io/components/"
+//                ],
+//                [
+//                    "item_type": "image",
+//                    "data": "http://placekitten.com/200/300"
+//                ],
+//                [
+//                    "item_type": "video",
+//                    "data": "https://devstreaming-cdn.apple.com/videos/wwdc/2017/230lc4n1loob9/230/hls_vod_mvp.m3u8"
+//                ]
+//            ]
         
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -53,17 +53,18 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
         getDataFromFirebase()
         
         
-        for data in resultDataa{
-            
-            results.append(responseData(itemType: data["item_type"]!, data: data["data"]!))
-            
-        }
+//        for data in resultDataa{
+//
+//            results.append(responseData(itemType: data["item_type"]!, data: data["data"]!))
+//
+//        }
         
    
     }
     
+    
     private func getDataFromFirebase() {
-       
+        
         
         var tempbuff:[[String:String]] = []
         
@@ -80,13 +81,45 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
                 let data = tempData["data"] as! String
                 
                 self.results.append(responseData.init(itemType: itemType, data: data))
-                   }
+            }
+            
+            DispatchQueue.main.async {
+                self.feedTableView.reloadData()
+            }
         })
-    
+        
         print("-----------Data")
         print(results)
         
     }
+    
+    
+    
+//    private func getDataFromFirebase() {
+//
+//
+//        var tempbuff:[[String:String]] = []
+//
+//        ref?.child("data").observe(.value, with: { (snapshot) in
+//            guard let value = snapshot.value as? [[String:Any]] else {print("Error")
+//                return
+//            }
+//
+//
+//            var buff = [[String:String]]()
+//            for tempData in value{
+//
+//                let itemType = tempData["item_type"] as! String
+//                let data = tempData["data"] as! String
+//
+//                self.results.append(responseData.init(itemType: itemType, data: data))
+//                   }
+//        })
+//
+//        print("-----------Data")
+//        print(results)
+//
+//    }
   
     
     
